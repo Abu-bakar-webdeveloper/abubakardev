@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <div className="shadow-md w-full top-0 left-0">
       <div className="md:flex items-center justify-between py-4  md:px-10 px-7">
-        <div className="text-2xl font-bold flex items-center font-[Poppins] text-gray-800">
+        <div className="text-2xl font-bold flex items-center font-[Poppins] text-white">
           <Link href="/">PORTFOLIO</Link>
         </div>
         <div onClick={() => setIsOpen(!isOpen)} className="md:hidden text-2xl absolute right-12 top-5 cursor-pointer">
@@ -33,7 +33,7 @@ const Navbar = () => {
             <li key={Link.name} className="md:ml-8 text-xl md:my-0 my-7">
               <a
                 href={Link.link}
-                className="text-gray-800 hover:text-secondary duration-500"
+                className="text-white hover:text-secondary duration-500"
               >
                 {Link.name}
               </a>
