@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
@@ -14,7 +16,23 @@ const HeroSection = () => {
         <h3 className="text-2xl lg:text-4xl font-sans text-gray-600">
           I am a{" "}
           <span className="font-bold text-transparent bg-gradient-to-r from-extra via-textcolor to-extra2 bg-clip-text">
-            Web Developer
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                "Web-developer",
+                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                "Backend developer",
+                1000,
+                "Frontend developer",
+                1000,
+                "Full Stack developer",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{ display: "inline-block", fontSize: "3rem" }}
+              repeat={Infinity}
+            />
           </span>
         </h3>
         <p className="text-md lg:text-lg font-sans text-gray-600">
@@ -24,7 +42,7 @@ const HeroSection = () => {
         <div className="mt-6">
           <Link
             href="/"
-            className="border border-textcolor bg-secondary text-white rounded-lg py-3 px-8 transition-transform transform hover:scale-105"
+            className="inline-block bg-gradient-to-r from-extra via-textcolor to-extra2 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             Add
           </Link>
