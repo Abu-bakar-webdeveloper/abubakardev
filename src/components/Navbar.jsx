@@ -16,8 +16,8 @@ const Navbar = () => {
     { name: "Contact", link: "#contact" },
   ];
   return (
-    <div className="shadow-md w-full top-0 left-0">
-      <div className="md:flex items-center justify-between py-4  md:px-10 px-7">
+    <div className="shadow-md w-full top-0 left-0 bg-primary">
+      <div className=" md:flex items-center justify-between py-4  md:px-10 px-7">
         <div className="text-2xl font-bold flex items-center font-[Poppins] text-white">
           <Link href="/">PORTFOLIO</Link>
         </div>
@@ -25,8 +25,8 @@ const Navbar = () => {
           {isOpen ? <RxCross2 /> : <MdMenu />}
         </div>
         <ul
-          className={`md:flex md:items-center bg-primary md:pb-0 pb-12 absolute md:static md:z-auto z-10
-        left-0 w-full md:w-auto md:pl-0 pl-9 transition-all
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-10
+        left-0 w-full md:w-auto md:pl-0 pl-9 transition-all bg-primary
         duration-500 ease-in ${isOpen ? 'top-20 opacity-100' : 'top-[-490px]'} md:opacity-100 opacity-0`}
         >
           {Links.map((Link) => (

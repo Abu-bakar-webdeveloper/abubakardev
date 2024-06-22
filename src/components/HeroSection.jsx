@@ -30,7 +30,7 @@ const HeroSection = () => {
               ]}
               wrapper="span"
               speed={50}
-              style={{ display: "inline-block", fontSize: "3rem" }}
+              style={{ display: "inline-block", fontSize: "2rem" }}
               repeat={Infinity}
             />
           </span>
@@ -41,10 +41,11 @@ const HeroSection = () => {
         </p>
         <div className="mt-6">
           <Link
-            href="/"
+            href="https://drive.google.com/file/d/1ktKZYi8NnXK5jJEsCJsZBIahoZ_p4qIt/view"
+            target="_blank"
             className="inline-block bg-gradient-to-r from-extra via-textcolor to-extra2 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
-            Add
+            Download Resume
           </Link>
         </div>
       </div>
