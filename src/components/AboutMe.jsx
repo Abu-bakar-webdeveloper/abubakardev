@@ -7,7 +7,7 @@ const AboutMe = () => {
 
   return (
     <div className="flex flex-col md:flex-row justify-between p-10 md:p-20 space-y-10 md:space-y-0 items-center">
-     <div className="bg-secondary min-h-[300px] w-[300px] md:min-w-[400px] md:h-[400px] relative flex justify-center items-center overflow-hidden animate-scale-in-center">
+      <div className="shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] bg-secondary min-h-[300px] w-[300px] md:min-w-[400px] md:h-[400px] relative flex justify-center items-center overflow-hidden animate-scale-in-center">
         <div className="absolute inset-0 bg-gradient-to-r from-extra via-textcolor to-extra2 p-2">
           <div className=" bg-secondary p-1 flex justify-center items-center h-full w-full">
             <Image
