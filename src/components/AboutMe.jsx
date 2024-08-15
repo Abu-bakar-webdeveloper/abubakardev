@@ -22,7 +22,7 @@ const AboutMe = () => {
       <div className="space-y-6 md:w-1/2 sm:pl-4">
         <h2 className="text-3xl lg:text-5xl font-bold font-sans text-textcolor">About Me</h2>
         <p className="text-md lg:text-lg font-sans text-gray-600">
-          Hi, I'm AbuBakar Siddique, a passionate web developer with a knack for creating dynamic and responsive web applications. With a strong background in both front-end and back-end technologies, I strive to build applications that not only function seamlessly but also provide an exceptional user experience.
+          Hi, I&apos;m AbuBakar Siddique, a passionate web developer with a knack for creating dynamic and responsive web applications. With a strong background in both front-end and back-end technologies, I strive to build applications that not only function seamlessly but also provide an exceptional user experience.
         </p>
         <div className="flex space-x-4">
           <button
@@ -56,7 +56,7 @@ const AboutMe = () => {
           )}
           {activeTab === 'education' && (
             <ul className="list-disc list-inside text-md lg:text-lg font-sans text-gray-600">
-              <li>Bachelor's Degree in Computer Science from GCUF</li>
+              <li>Bachelor&apos;s Degree in Computer Science from GCUF</li>
               <li>Completed various online courses in web development and programming</li>
             </ul>
           )}
