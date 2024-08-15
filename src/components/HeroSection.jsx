@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
@@ -39,6 +40,17 @@ const HeroSection = () => {
           I am a full-stack web developer with a strong background in building
           dynamic and responsive web applications.
         </p>
+        <div className="flex space-x-4 ml-4">
+            <a href="https://github.com/Abu-bakar-webdeveloper" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+              <FaGithub size={24} />
+            </a>
+            <a href="https://www.linkedin.com/in/abubakar-awan-4b6502227/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+              <FaLinkedin size={24} />
+            </a>
+            <a href="abubakaraw8@gmail.com" className="text-gray-400 hover:text-white transition">
+              <FaEnvelope size={24} />
+            </a>
+          </div>
         <div className="mt-6">
           <Link
             href="https://drive.google.com/file/d/1ktKZYi8NnXK5jJEsCJsZBIahoZ_p4qIt/view"

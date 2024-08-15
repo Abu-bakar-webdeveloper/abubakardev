@@ -9,14 +9,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   let Links = [
-    { name: "Home", link: "/" },
+    { name: "Home", link: "#hero" },
     { name: "About Me", link: "#about" },
-    { name: "Services", link: "#services" },
+    { name: "Skills", link: "#skills" },
     { name: "Projects", link: "#projects" },
-    { name: "Contact", link: "#contact" },
   ];
   return (
-    <div className="shadow-md w-full top-0 left-0 bg-primary">
+    <div className="shadow-md w-full top-0 left-0 bg-primary fixed z-30">
       <div className=" md:flex items-center justify-between py-4  md:px-10 px-7">
         <div className="text-2xl font-bold flex items-center font-[Poppins] text-white">
           <Link href="/">PORTFOLIO</Link>
